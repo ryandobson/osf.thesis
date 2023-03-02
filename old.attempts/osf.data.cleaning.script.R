@@ -3,14 +3,16 @@ library(tidyverse)
 
 read_csv("osf.thesis/raw.osf.thesis.data.csv")
 
-raw.data <-  read_csv("osf.thesis/data/raw.osf.thesis.data.csv")
+raw.data <-  read_csv("data/raw.osf.thesis.data.csv")
 
 glimpse(raw.data)
 
-#Overwrite data and adding a participant id column
+str(raw.data)
+
+#Overwrite data and adding a participant id column to sort through people 
 data.organized <- raw.data %>% mutate(participant.id = 1:164)
 
-#Overwrite data and renaming all variables to lowercase 
+#Overwrite data and renaming all variables to lowercase for clarity 
 data.organized <- data.organized %>% rename_all(tolower)
 
 
@@ -105,7 +107,7 @@ data.1 %>% select(participant.id,
 
 #Updating participant age 
 
-data.1 <- data.organized %>% 
+data.1 <- data.1 %>% 
   mutate(age.participant = replace(age.participant, age.participant == 211, 21))
 
 
@@ -128,8 +130,10 @@ data.2 <- data.1 %>%
   select(-clearly.dating.their.osf) #removing column "clearly.dating.their.osf" 
 
 
-
 #mean age of the sample 
-summarize(data.removed.participants, age.mean = mean(age.participant))
+summarize(data.1, age.mean = mean(age.participant))
+
+
+
 
 

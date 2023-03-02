@@ -3,7 +3,7 @@
 library(tidyverse)
 
 #Load Data 
-data <- read_csv("osf.thesis/data/osf.clean.data.file.csv")
+data <- read_csv("data/osf.clean.data.file.csv")
 
 
 
