@@ -13,6 +13,7 @@ Prepare the Data for Analysis
  create composite variables 
  run alpha re liabilities
  restructure different variables 
+ turn necessary things into factors 
  
 Initial Graphs/Tables  
   create box plots for necessary variables 

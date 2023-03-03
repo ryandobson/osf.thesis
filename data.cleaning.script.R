@@ -130,13 +130,10 @@ rm(comp.var)
 data <- data %>% rename(comp.rom.sex = comp.rom.phys)
 
 
+
 #Writing the new data object to a csv file for future use! 
 
 data %>% write_csv("data/analyze.osf.data.csv")
-
-
-
-
 
 
 
