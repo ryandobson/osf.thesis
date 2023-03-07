@@ -3,7 +3,7 @@ library(tidyverse)
 
 data <- read_csv("data/analyze.osf.data.csv")
 
-?source
+#?source
  
 #Sourcing in my factors for data analysis 
 source("factor.script.R")
@@ -85,5 +85,105 @@ bothgender.mean.sd <- data %>%
     list(mean = mean, sd = sd), na.rm = TRUE) 
 
 
+#Converting summary statistics to a data frame 
+data.sum <- tibble(unclass(summary(data)),
+                   check.names = FALSE)
+
+data.sum
+
+### ATTEMPS TO CREATE A USEFUL DATA FRAME TO VIEW DESCRIPTIVES 
+
+data %>% group_by(gender) %>%  
+   drop_na(osf.happy) %>% #can use this to drop.na's instead of specifying within!
+  summarize(mean.osf.happy = mean(osf.happy),
+            sd = sd(osf.happy, na.rm = TRUE), 
+            osf.jealous = mean(osf.jealous)
+            )
+?summarize_each
+?across
 
 
+#A good way to summarize aross a few specific columns 
+#data %>% summarize(across(c(osf.surprised, osf.angry), 
+ #                         list(mean = mean, sd = sd), 
+  #                        na.rm = TRUE, 
+   #                       .names = "{col} {fn}"))
+    
+
+#A good way to summarize multiple statistics across several columns                                        
+osf.stats <- data %>% group_by(gender) %>%  summarize(across(starts_with("osf."), 
+                          list(mean = mean, sd = sd), 
+                          na.rm = TRUE, 
+                          .names = "{col} {fn}"))
+
+rom.stats <- data %>% group_by(gender) %>% 
+  summarize(across(starts_with("rom."), 
+                   list(mean = mean, sd = sd), 
+                   na.rm = TRUE, 
+                   .names = "{col} {fn}"))
+
+ssf.stats <- data %>% group_by(gender) %>% 
+  summarize(across(starts_with("ssf."), 
+                   list(mean = mean, sd = sd), 
+                   na.rm = TRUE, 
+                   .names = "{col} {fn}"))
+
+comp.stats <- data %>% group_by(gender) %>% 
+  summarize(across(starts_with("comp."), 
+                   list(mean = mean, sd = sd), 
+                   na.rm = TRUE, 
+                   .names = "{col} {fn}"))
+
+
+?tibble
+
+
+
+
+#An incredibly inconvienent table of values. Although it returns the values nicely enough, it looks awful. 
+bothgender.mean.sd <- data %>% 
+  group_by(gender) %>%
+  summarize_at( 
+    c("comp.osf.jealous", "comp.ssf.jealous", "comp.rom.jealous",
+      "comp.osf.angry.upset", "comp.ssf.angry.upset", "comp.rom.angry.upset"), 
+    list(mean = mean), na.rm = TRUE) 
+
+
+men <- data %>% filter(gender == "Men")
+
+women <- data %>% filter(gender == "Women")
+
+
+men <- men  %>% select(comp.ssf.jealous,
+                                          comp.osf.jealous,
+                                          comp.rom.jealous,
+                                          comp.ssf.angry.upset,
+                                          comp.osf.angry.upset,
+                                          comp.rom.angry.upset,
+                                          ssf.happy,
+                                          osf.happy,
+                                          rom.happy,
+                                          ssf.sad,
+                                          osf.sad,
+                                          rom.sad,
+                                          gender, 
+                                          relationship.status.participant,
+                                          osf.closer.ssf,
+                                          comp.rom.sex)
+
+women <- women  %>% select(comp.ssf.jealous,
+                       comp.osf.jealous,
+                       comp.rom.jealous,
+                       comp.ssf.angry.upset,
+                       comp.osf.angry.upset,
+                       comp.rom.angry.upset,
+                       ssf.happy,
+                       osf.happy,
+                       rom.happy,
+                       ssf.sad,
+                       osf.sad,
+                       rom.sad,
+                       gender, 
+                       relationship.status.participant,
+                       osf.closer.ssf,
+                       comp.rom.sex)
