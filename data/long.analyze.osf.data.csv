@@ -1,0 +1,475 @@
+within.subject,gender,single.or.dating,relationship.status.participant,osf.closer.ssf,jealous,angry,happy,sad
+1,Women,Single,Single,2,2,1,3,1
+2,Women,Single,Single,2,2,1.5,3,1
+3,Women,Single,Single,2,1,1,2,1
+1,Women,Single,Single,2,1,1,3,1
+2,Women,Single,Single,2,1,1,3,1
+3,Women,Single,Single,2,1,1,3,1
+1,Women,Single,Casually Dating,2,1,1,2,1
+2,Women,Single,Casually Dating,2,1,1,4,1
+3,Women,Single,Casually Dating,2,1,1,5,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1,1,4,1
+3,Men,Single,Single,2,1.5,1,3,1
+1,Men,Single,Single,2,1,1,3,1
+2,Men,Single,Single,2,1.5,1,1,1
+3,Men,Single,Single,2,1.5,1,3,1
+1,Men,Single,Single,2,1,1,3,1
+2,Men,Single,Single,2,1,1,2,2
+3,Men,Single,Single,2,1,1,3,1
+1,Men,Relationship,Engaged/Married,2,2,1,4,1
+2,Men,Relationship,Engaged/Married,2,4.5,4,1,2
+3,Men,Relationship,Engaged/Married,2,4,4,2,2
+1,Men,Single,Single,2,2.5,1,3,1
+2,Men,Single,Single,2,3.5,1.5,2,2
+3,Men,Single,Single,2,1.5,2,2,2
+1,Women,Single,Single,2,1,2,4,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1,1,4,1
+1,Women,Single,Single,2,2,1,3,2
+2,Women,Single,Single,2,1.5,1,2,1
+3,Women,Single,Single,2,NA,3,2,3
+1,Women,Single,Casually Dating,2,1,1,3,1
+2,Women,Single,Casually Dating,2,1,1,3,1
+3,Women,Single,Casually Dating,2,2,2.5,3,3
+1,Women,Single,Single,2,2,1,4,1
+2,Women,Single,Single,2,2.5,2,3,2
+3,Women,Single,Single,2,3.5,2.5,3,4
+1,Women,Relationship,Commited Relationship,2,1.5,1,3,2
+2,Women,Relationship,Commited Relationship,2,1.5,1,4,2
+3,Women,Relationship,Commited Relationship,2,1,2,2,2
+1,Men,Relationship,Commited Relationship,2,1,1,4,1
+2,Men,Relationship,Commited Relationship,2,1,1,4,1
+3,Men,Relationship,Commited Relationship,2,1,1,3,1
+1,Men,Relationship,Commited Relationship,2,1,1,5,1
+2,Men,Relationship,Commited Relationship,2,1,1,5,1
+3,Men,Relationship,Commited Relationship,2,1,1,5,1
+1,Women,Single,Single,2,2,1,3,2
+2,Women,Single,Single,2,2.5,1.5,4,3
+3,Women,Single,Single,2,2.5,2,4,3
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1,1,2,1
+3,Women,Single,Single,2,1,1,4,1
+1,Women,Relationship,Commited Relationship,2,1,1,1,1
+2,Women,Relationship,Commited Relationship,2,1.5,1.5,4,1
+3,Women,Relationship,Commited Relationship,2,1,2,3,1
+1,Women,Single,Single,2,1.5,1.5,2,2
+2,Women,Single,Single,2,1,1,3,2
+3,Women,Single,Single,2,1,1,4,1
+1,Men,Single,Single,1,1,1,4,1
+2,Men,Single,Single,1,1,1,2,1
+3,Men,Single,Single,1,1.5,1,4,1
+1,Women,Single,Single,2,1,1,5,1
+2,Women,Single,Single,2,1,1,5,1
+3,Women,Single,Single,2,1,1,5,1
+1,Women,Single,Single,1,2,1,4,2
+2,Women,Single,Single,1,2.5,1,4,2
+3,Women,Single,Single,1,2,1,4,2
+1,Women,Relationship,Commited Relationship,1,1,1,3,1
+2,Women,Relationship,Commited Relationship,1,3.5,2.5,2,3
+3,Women,Relationship,Commited Relationship,1,3,3,2,2
+1,Women,Relationship,Commited Relationship,2,1.5,1,3,1
+2,Women,Relationship,Commited Relationship,2,2,1.5,2,2
+3,Women,Relationship,Commited Relationship,2,1,1,4,1
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,2,1,3,2
+3,Women,Relationship,Commited Relationship,2,1,1,4,1
+1,Men,Single,Single,1,2.5,2,4,2
+2,Men,Single,Single,1,3,2,3,2
+3,Men,Single,Single,1,3,1.5,3,3
+1,Men,Single,Single,1,3.5,2,4,3
+2,Men,Single,Single,1,3.5,2.5,5,2
+3,Men,Single,Single,1,5,3,3,5
+1,Men,Single,Single,2,1.5,1,5,2
+2,Men,Single,Single,2,2,1,4,2
+3,Men,Single,Single,2,1,1,4,1
+1,Men,Single,Single,2,NA,1,5,1
+2,Men,Single,Single,2,1,1,1,1
+3,Men,Single,Single,2,1,1,1,1
+1,Men,Relationship,Commited Relationship,1,1,1,4,1
+2,Men,Relationship,Commited Relationship,1,2.5,2.5,2,1
+3,Men,Relationship,Commited Relationship,1,3.5,3,1,3
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1.5,1,4,1
+1,Women,Relationship,Commited Relationship,2,1,1,5,1
+2,Women,Relationship,Commited Relationship,2,1,2.5,3,3
+3,Women,Relationship,Commited Relationship,2,1,1,5,1
+1,Men,Single,Single,2,2,1,4,1
+2,Men,Single,Single,2,1.5,1,1,1
+3,Men,Single,Single,2,3,5,1,5
+1,Women,Relationship,Commited Relationship,2,1,1,3,1
+2,Women,Relationship,Commited Relationship,2,1,1,5,1
+3,Women,Relationship,Commited Relationship,2,1,1,5,1
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,1,2,2,2
+3,Women,Relationship,Commited Relationship,2,1,1,5,1
+1,Men,Single,Single,2,1,1,3,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1,1,3,1
+1,Men,Relationship,Commited Relationship,2,1,1,4,3
+2,Men,Relationship,Commited Relationship,2,2.5,2,5,3
+3,Men,Relationship,Commited Relationship,2,3,1.5,3,4
+1,Men,Relationship,Commited Relationship,2,1,1,4,1
+2,Men,Relationship,Commited Relationship,2,1,1,4,1
+3,Men,Relationship,Commited Relationship,2,1,1,5,1
+1,Men,Relationship,Commited Relationship,2,1,1,3,1
+2,Men,Relationship,Commited Relationship,2,1,1,3,1
+3,Men,Relationship,Commited Relationship,2,1,1,3,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,2,1,3,1
+3,Men,Single,Single,2,1,1,3,1
+1,Men,Single,Single,1,1,1,4,1
+2,Men,Single,Single,1,3,1,4,1
+3,Men,Single,Single,1,3,1,4,2
+1,Women,Single,Single,2,1,1,3,1
+2,Women,Single,Single,2,1,1,3,1
+3,Women,Single,Single,2,1,1,3,1
+1,Men,Relationship,Engaged/Married,2,1,1,4,1
+2,Men,Relationship,Engaged/Married,2,1,1,4,1
+3,Men,Relationship,Engaged/Married,2,1,1,4,1
+1,Women,Single,Casually Dating,2,1,1,5,1
+2,Women,Single,Casually Dating,2,1,1,2,2
+3,Women,Single,Casually Dating,2,1.5,3,1,2
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1,1,4,1
+1,Men,Single,Single,2,2,1,4,2
+2,Men,Single,Single,2,2,1,4,2
+3,Men,Single,Single,2,1,1,4,1
+1,Women,Single,Single,1,1,1,3,1
+2,Women,Single,Single,1,2,1,3,1
+3,Women,Single,Single,1,2,1.5,3,2
+1,Women,Single,Single,1,1,1,5,1
+2,Women,Single,Single,1,3.5,2.5,4,2
+3,Women,Single,Single,1,3.5,4,3,5
+1,Men,Single,Single,2,1,1,3,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1,1,3,1
+1,Men,Single,Single,2,1,1,3,1
+2,Men,Single,Single,2,2,2,2,1
+3,Men,Single,Single,2,2,3,2,2
+1,Men,Single,Single,2,1,1,1,1
+2,Men,Single,Single,2,2.5,2.5,2,2
+3,Men,Single,Single,2,3,1.5,1,3
+1,Women,Single,Single,1,1.5,1,4,2
+2,Women,Single,Single,1,2,1.5,4,2
+3,Women,Single,Single,1,3.5,2,2,2
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1.5,1.5,3,1
+3,Women,Single,Single,2,1.5,1,3,1
+1,Women,Single,Single,2,1,1,2,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1,1,4,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1.5,1.5,3,1
+3,Men,Single,Single,2,1.5,1,3,2
+1,Women,Relationship,Commited Relationship,2,1.5,1,4,1
+2,Women,Relationship,Commited Relationship,2,1,1,4,2
+3,Women,Relationship,Commited Relationship,2,1,1,4,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1,1,2,1
+3,Men,Single,Single,2,1,1,3,1
+1,Men,Single,Single,2,1.5,1,4,1
+2,Men,Single,Single,2,1,1,4,1
+3,Men,Single,Single,2,1,1,5,1
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,2.5,2,2,3
+3,Women,Relationship,Commited Relationship,2,1,1,4,1
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1,1,5,1
+1,Women,Relationship,Commited Relationship,1,1,1,3,1
+2,Women,Relationship,Commited Relationship,1,1,1,5,1
+3,Women,Relationship,Commited Relationship,1,1,1,NA,1
+1,Women,Single,Single,2,1.5,1,5,2
+2,Women,Single,Single,2,4,3,2,2
+3,Women,Single,Single,2,3,2,3,3
+1,Women,Relationship,Commited Relationship,1,1,1,5,1
+2,Women,Relationship,Commited Relationship,1,1,1.5,2,2
+3,Women,Relationship,Commited Relationship,1,1,1,5,1
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,1,1,4,1
+3,Women,Relationship,Commited Relationship,2,1,1,4,1
+1,Women,Single,Single,2,1.5,1.5,3,2
+2,Women,Single,Single,2,2,1,3,2
+3,Women,Single,Single,2,1.5,1,4,2
+1,Women,Single,Single,2,1,1,4,2
+2,Women,Single,Single,2,2,1.5,4,2
+3,Women,Single,Single,2,1.5,1,4,1
+1,Men,Single,Single,1,1,1,4,1
+2,Men,Single,Single,1,1,1,4,1
+3,Men,Single,Single,1,1,1,4,1
+1,Women,Single,Single,2,1,1,3,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1,1,4,1
+1,Men,Single,Single,2,1,1,5,1
+2,Men,Single,Single,2,1,1,5,1
+3,Men,Single,Single,2,1,1,5,1
+1,Women,Single,Single,2,1,1,5,1
+2,Women,Single,Single,2,3,2,5,2
+3,Women,Single,Single,2,2.5,1.5,5,2
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1,1.5,2,1
+3,Men,Single,Single,2,1.5,1,4,1
+1,Women,Single,Single,1,1,1,4,11
+2,Women,Single,Single,1,1.5,1,5,1
+3,Women,Single,Single,1,1.5,1,4,2
+1,Men,Relationship,Commited Relationship,2,1,1,4,1
+2,Men,Relationship,Commited Relationship,2,1,2,4,1
+3,Men,Relationship,Commited Relationship,2,1,1,5,2
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,1,1,4,1
+3,Women,Relationship,Commited Relationship,2,1,5,1,5
+1,Men,Single,Single,2,2.5,1,4,1
+2,Men,Single,Single,2,1.5,1,5,1
+3,Men,Single,Single,2,2,1.5,3,1
+1,Men,Relationship,Commited Relationship,1,4.5,2,2,5
+2,Men,Relationship,Commited Relationship,1,2,1,3,1
+3,Men,Relationship,Commited Relationship,1,5,4,5,5
+1,Men,Single,Single,2,4,4,3,4
+2,Men,Single,Single,2,3.5,1.5,4,3
+3,Men,Single,Single,2,2.5,2.5,3,4
+1,Women,Single,Single,2,1,1,2,1
+2,Women,Single,Single,2,1.5,1,4,1
+3,Women,Single,Single,2,1.5,2,2,1
+1,Women,Relationship,Commited Relationship,1,1.5,1,5,1
+2,Women,Relationship,Commited Relationship,1,1,1,4,1
+3,Women,Relationship,Commited Relationship,1,1.5,1,3,1
+1,Women,Single,Single,2,1,1,3,1
+2,Women,Single,Single,2,1,1,3,1
+3,Women,Single,Single,2,1,2,2,1
+1,Men,Relationship,Commited Relationship,2,3,1.5,2,2
+2,Men,Relationship,Commited Relationship,2,1.5,1,3,1
+3,Men,Relationship,Commited Relationship,2,1.5,1.5,1,2
+1,Men,Single,Single,1,1,1,5,1
+2,Men,Single,Single,1,1.5,2.5,3,1
+3,Men,Single,Single,1,2.5,1.5,1,3
+1,Men,Relationship,Commited Relationship,2,1,1,5,1
+2,Men,Relationship,Commited Relationship,2,2.5,1.5,1,3
+3,Men,Relationship,Commited Relationship,2,4,2,1,5
+1,Men,Relationship,Commited Relationship,2,1,1,4,1
+2,Men,Relationship,Commited Relationship,2,1,1,4,1
+3,Men,Relationship,Commited Relationship,2,1,1,3,1
+1,Women,Relationship,Commited Relationship,1,1.5,1,4,1
+2,Women,Relationship,Commited Relationship,1,3.5,3.5,2,1
+3,Women,Relationship,Commited Relationship,1,2,4,1,2
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1,1,4,1
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1,1,4,1
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,1,1,3,1
+3,Women,Relationship,Commited Relationship,2,1,1,4,1
+1,Men,Single,Single,2,1,1,5,1
+2,Men,Single,Single,2,2,1.5,4,1
+3,Men,Single,Single,2,1.5,1.5,4,1
+1,Men,Single,Single,1,1,1,5,1
+2,Men,Single,Single,1,3,2.5,5,5
+3,Men,Single,Single,1,3,5,1,5
+1,Men,Relationship,Commited Relationship,2,1,1,4,1
+2,Men,Relationship,Commited Relationship,2,1,1,4,1
+3,Men,Relationship,Commited Relationship,2,1,1,4,1
+1,Men,Single,Single,2,1,1,2,1
+2,Men,Single,Single,2,1,1,4,1
+3,Men,Single,Single,2,1,1,4,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1.5,1,3,1
+3,Men,Single,Single,2,1.5,1,4,1
+1,Women,Relationship,Commited Relationship,NA,1.5,1,4,1
+2,Women,Relationship,Commited Relationship,NA,1.5,1,4,1
+3,Women,Relationship,Commited Relationship,NA,1.5,1.5,4,1
+1,Women,Relationship,Commited Relationship,1,1,1,5,1
+2,Women,Relationship,Commited Relationship,1,1.5,1,4,1
+3,Women,Relationship,Commited Relationship,1,1,1,4,1
+1,Women,Single,Single,2,2.5,1.5,4,2
+2,Women,Single,Single,2,2,1,3,2
+3,Women,Single,Single,2,1.5,1,4,1
+1,Men,Single,Single,2,1,1,5,1
+2,Men,Single,Single,2,1,1,5,1
+3,Men,Single,Single,2,1,1,4,1
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,2.5,1.5,2,2
+3,Women,Single,Single,2,4,4,2,2
+1,Women,Relationship,Commited Relationship,1,2,3.5,1,5
+2,Women,Relationship,Commited Relationship,1,3,5,1,5
+3,Women,Relationship,Commited Relationship,1,3,5,1,5
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1.5,1.5,4,2
+1,Women,Relationship,Commited Relationship,2,1.5,1,3,1
+2,Women,Relationship,Commited Relationship,2,2,1,4,1
+3,Women,Relationship,Commited Relationship,2,2,1,4,1
+1,Women,Single,Single,2,1.5,1,4,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,2,1,4,1
+1,Women,Single,Single,2,2,1,5,3
+2,Women,Single,Single,2,3,1,4,3
+3,Women,Single,Single,2,3.5,3.5,2,4
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1.5,1,3,2
+3,Women,Single,Single,2,1,2,3,1
+1,Men,Relationship,Commited Relationship,1,1,1,2,1
+2,Men,Relationship,Commited Relationship,1,1,1,2,1
+3,Men,Relationship,Commited Relationship,1,1,1,2,1
+1,Women,Relationship,Commited Relationship,2,1,1,5,1
+2,Women,Relationship,Commited Relationship,2,1,1,5,1
+3,Women,Relationship,Commited Relationship,2,1,1,5,1
+1,Men,Single,Single,1,1,1,4,1
+2,Men,Single,Single,1,1.5,1,3,1
+3,Men,Single,Single,1,1.5,1,2,1
+1,Men,Single,Single,2,2,1,1,2
+2,Men,Single,Single,2,2.5,4,1,3
+3,Men,Single,Single,2,4,4.5,1,4
+1,Men,Single,Single,2,1,1,5,1
+2,Men,Single,Single,2,1,1,5,1
+3,Men,Single,Single,2,1,1,5,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1,1,4,1
+3,Men,Single,Single,2,1,1,3,1
+1,Men,Single,Casually Dating,1,1.5,1,4,2
+2,Men,Single,Casually Dating,1,3,2,2,3
+3,Men,Single,Casually Dating,1,3.5,3,2,3
+1,Men,Relationship,Commited Relationship,2,1,1,3,1
+2,Men,Relationship,Commited Relationship,2,1,1,3,1
+3,Men,Relationship,Commited Relationship,2,1,1,4,1
+1,Men,Relationship,Commited Relationship,2,1,1,5,1
+2,Men,Relationship,Commited Relationship,2,1,1,5,1
+3,Men,Relationship,Commited Relationship,2,1,1,4,1
+1,Men,Single,Single,2,1,1,5,1
+2,Men,Single,Single,2,2.5,1,4,1
+3,Men,Single,Single,2,3,1,5,1
+1,Men,Single,Casually Dating,2,1,1,4,1
+2,Men,Single,Casually Dating,2,1.5,1,4,1
+3,Men,Single,Casually Dating,2,1,1,4,1
+1,Men,Relationship,Commited Relationship,2,1,1,4,1
+2,Men,Relationship,Commited Relationship,2,1,1,3,1
+3,Men,Relationship,Commited Relationship,2,1.5,1,3,1
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,4.5,4.5,1,5
+3,Women,Relationship,Commited Relationship,2,5,5,1,5
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,1,1.5,4,2
+3,Women,Relationship,Commited Relationship,2,1,1,3,1
+1,Men,Single,Single,2,1,1,3,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1,1,2,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1,1.5,5,1
+1,Men,Single,Single,1,1,1,3,1
+2,Men,Single,Single,1,1,1,2,1
+3,Men,Single,Single,1,1.5,2.5,3,2
+1,Women,Single,Casually Dating,2,1,1,3,1
+2,Women,Single,Casually Dating,2,1.5,1,1,2
+3,Women,Single,Casually Dating,2,2,1,3,2
+1,Men,Single,Single,1,1,1,1,1
+2,Men,Single,Single,1,1,1,4,1
+3,Men,Single,Single,1,1,1,1,1
+1,Men,Single,Single,2,1,3,2,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1.5,1,4,1
+1,Women,Single,Single,2,1.5,1,4,1
+2,Women,Single,Single,2,1.5,1,2,2
+3,Women,Single,Single,2,2.5,3,2,3
+1,Men,Relationship,Commited Relationship,2,1,1,4,1
+2,Men,Relationship,Commited Relationship,2,1,1,4,1
+3,Men,Relationship,Commited Relationship,2,1,1,4,1
+1,Men,Single,Single,2,1,1,3,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1,1,3,1
+1,Men,Single,Single,2,1,1,5,1
+2,Men,Single,Single,2,3,2.5,1,3
+3,Men,Single,Single,2,1,1,4,1
+1,Women,Single,Single,2,1,1,3,1
+2,Women,Single,Single,2,1.5,1,3,1
+3,Women,Single,Single,2,1.5,2,2,1
+1,Men,Single,Casually Dating,2,1.5,1,4,1
+2,Men,Single,Casually Dating,2,1,1,4,1
+3,Men,Single,Casually Dating,2,1,1,4,1
+1,Women,Single,Single,NA,1,1,4,1
+2,Women,Single,Single,NA,1,1,4,1
+3,Women,Single,Single,NA,1,1,5,1
+1,Women,Single,Single,2,1,1,4,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1.5,1,3,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,2,1,2,2
+3,Men,Single,Single,2,1.5,1,4,2
+1,Men,Relationship,Commited Relationship,1,1,1,4,1
+2,Men,Relationship,Commited Relationship,1,1.5,1.5,3,1
+3,Men,Relationship,Commited Relationship,1,1.5,2.5,1,1
+1,Women,Single,Single,2,1,1,5,1
+2,Women,Single,Single,2,2,1,4,1
+3,Women,Single,Single,2,2.5,1,4,4
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,1,1,3,1
+3,Women,Relationship,Commited Relationship,2,1,1,4,1
+1,Women,Single,Casually Dating,2,2,1.5,2,2
+2,Women,Single,Casually Dating,2,4,3,2,3
+3,Women,Single,Casually Dating,2,4,2,3,2
+1,Men,Relationship,Commited Relationship,2,1,1,5,1
+2,Men,Relationship,Commited Relationship,2,1,1,4,1
+3,Men,Relationship,Commited Relationship,2,1,1.5,4,1
+1,Women,Relationship,Commited Relationship,2,1,1,3,1
+2,Women,Relationship,Commited Relationship,2,1.5,1,4,1
+3,Women,Relationship,Commited Relationship,2,1,1,3,1
+1,Men,Single,Single,2,1,1,3,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1,1,3,1
+1,Men,Single,Single,2,1,1,5,1
+2,Men,Single,Single,2,1,1,5,1
+3,Men,Single,Single,2,1,1,4,1
+1,Men,Relationship,Commited Relationship,1,1,1,4,1
+2,Men,Relationship,Commited Relationship,1,1,1,4,1
+3,Men,Relationship,Commited Relationship,1,1,1,4,1
+1,Men,Single,Single,2,1,1,2,1
+2,Men,Single,Single,2,2,1,3,1
+3,Men,Single,Single,2,2.5,2.5,1,2
+1,Women,Relationship,Commited Relationship,2,3,1,3,2
+2,Women,Relationship,Commited Relationship,2,2.5,1,3,1
+3,Women,Relationship,Commited Relationship,2,1,1.5,4,1
+1,Men,Single,Single,2,1,1,4,1
+2,Men,Single,Single,2,1,1,3,1
+3,Men,Single,Single,2,1,1,4,1
+1,Men,Relationship,Commited Relationship,1,1.5,1,5,1
+2,Men,Relationship,Commited Relationship,1,1.5,1,4,2
+3,Men,Relationship,Commited Relationship,1,1,1,5,2
+1,Women,Single,Single,2,1.5,1,4,1
+2,Women,Single,Single,2,2.5,2,3,4
+3,Women,Single,Single,2,3,3,4,4
+1,Women,Single,Single,2,1,1,5,1
+2,Women,Single,Single,2,1.5,1.5,5,1
+3,Women,Single,Single,2,1,1,5,1
+1,Men,Single,Single,2,1,1,2,1
+2,Men,Single,Single,2,2.5,4,2,2
+3,Men,Single,Single,2,3,4,2,2
+1,Women,Single,Single,2,2,1,NA,2
+2,Women,Single,Single,2,1,1,3,1
+3,Women,Single,Single,2,1,1.5,3,2
+1,Men,Single,Single,1,1.5,1,4,1
+2,Men,Single,Single,1,3,2.5,3,3
+3,Men,Single,Single,1,3.5,4,2,4
+1,Women,Single,Single,2,1.5,2,3,2
+2,Women,Single,Single,2,2,2,2,3
+3,Women,Single,Single,2,1.5,1.5,3,2
+1,Women,Single,Single,2,1.5,1,4,1
+2,Women,Single,Single,2,3,1,2,2
+3,Women,Single,Single,2,2.5,1,5,2
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,2,1.5,2,1
+3,Women,Relationship,Commited Relationship,2,3,1,4,3
+1,Women,Relationship,Commited Relationship,2,1,1,4,1
+2,Women,Relationship,Commited Relationship,2,2,4,1,3
+3,Women,Relationship,Commited Relationship,2,2.5,5,1,3
+1,Women,Single,Single,2,1,1,3,1
+2,Women,Single,Single,2,1,1,4,1
+3,Women,Single,Single,2,1,1,2,1
+1,Women,Relationship,Commited Relationship,2,1,1,1,1
+2,Women,Relationship,Commited Relationship,2,2.5,1,3,1
+3,Women,Relationship,Commited Relationship,2,2,1.5,3,1
+1,Women,Relationship,Commited Relationship,2,1,1,5,1
+2,Women,Relationship,Commited Relationship,2,2,1.5,4,1
+3,Women,Relationship,Commited Relationship,2,1,1,5,1

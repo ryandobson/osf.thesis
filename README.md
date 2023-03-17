@@ -5,15 +5,16 @@ Project Overview/Checklist:
 
 Clean the Data 
  reorganize the data frame 
- eliminate any unecessary variables 
+ eliminate any unnecessary variables 
  remove any participants that are not needed 
  write the new data frame to a csv 
  
 Prepare the Data for Analysis 
+ restructure different variables 
+ turn necessary things into factors (create document and source it in before analyses)
  create composite variables 
  run alpha re liabilities
- restructure different variables 
- turn necessary things into factors 
+ 
  
 Initial Graphs/Tables  
   create box plots for necessary variables 
@@ -34,7 +35,15 @@ EXTRA
  Create an RMarkdown file that highlights all of the descriptives/inferential statistics 
  
  
- 
+NOTE ON TABLE CREATION: 
+Don't bother trying to create a table in R completely. It is almost impossible 
+to get a table in the proper format. 
+OPTIONALLY: Attempt to grab the data in the easiest format possible. 
+Then move things around in a excel CSV document and bring it back into R to use 
+the kable package to format the table nicely! 
+Ideally, you want to use R to grab the data and put it into the excel document. 
+Then just copy and paste and rearrange rows/columns in Excel before bringing it 
+back into R. (Could potentially do all of this in R)
  
  
   
