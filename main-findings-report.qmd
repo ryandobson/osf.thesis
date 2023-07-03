@@ -1,0 +1,240 @@
+---
+title: "main-findings-report"
+author: "Ryan Dobson"
+format: html
+editor: visual
+---
+
+## Outline 
+
+This document serves as a replacement to my various word documents of figures, descriptive statistics, and different results tables. 
+The plan is to make it a conclusive overview of my project. 
+
+
+
+```{r}
+#| lable: code-dependencies 
+#| include: false
+
+library(tidyverse)
+library(psych)
+library(kableExtra)
+
+data <- read_csv("data/analyze.osf.data.csv")
+
+#Sourcing in my factors for data analysis 
+source("factor.script.R")
+
+#Sourcing in my LONG data for graphs 
+
+long.data <- read_csv("data/long.analyze.osf.data.csv") 
+source("long.factor.script.R")
+
+
+```
+
+## Basic Descriptive Statistics for Variables 
+
+```{r}
+#| lable: basic-descriptives
+#| echo: false
+#| message: false
+#| warning: false
+
+grouped_mean_sd <- function(summary_vars) { 
+  mean.results <- data |>  
+    group_by(gender) |> 
+    summarize(
+      across({{summary_vars}}, 
+             \(x) (mean(x, na.rm = TRUE)))) |> 
+    pivot_longer(
+      cols = {{summary_vars}},
+      names_to = "Variable",
+      values_to = "mean"
+    ) |> 
+    pivot_wider(
+      names_from = gender,
+      values_from = mean
+    ) |> 
+    rename(
+      Men_Mean = Men,
+      Women_Mean = Women
+    )
+ 
+  sd.results <- data |>  
+    group_by(gender) |> 
+    summarize(
+      across({{summary_vars}}, 
+             \(x) (sd(x, na.rm = TRUE)))) |> 
+    pivot_longer(
+      cols = {{summary_vars}},
+      names_to = "Variable",
+      values_to = "sd"
+    ) |> 
+    pivot_wider(
+      names_from = gender,
+      values_from = sd
+    ) |> 
+    rename(
+      Men_SD = Men,
+      Women_SD = Women
+    )
+
+final.results <- mean.results |> left_join(sd.results)|> 
+  relocate(Variable, Men_Mean, Men_SD, Women_Mean, Women_SD)|>
+  mutate_if(is.numeric, ~round(., 2)) |> 
+  kbl() |> 
+  kable_styling()
+final.results
+} 
+
+grouped_mean_sd(comparison.attractive:sexual.attraction.tofriend)
+
+grouped_mean_sd(ssf.surprised:ssf.sad)
+grouped_mean_sd(osf.surprised:osf.sad)
+grouped_mean_sd(rom.surprised:rom.sad)
+
+grouped_mean_sd(age.participant)
+
+```
+
+
+## Means, CI's and Standard Deviations for Key Variables:  
+
+```{r}
+#| lable: full-descriptives 
+#| echo: false
+#| message: false
+#| warning: false
+
+group_mean_sd_up_lo_ci <- function(variable) { 
+  mean.results <- data |>  
+    group_by(gender) |> 
+    summarize(
+      across({{variable}}, 
+             \(x) (mean(x, na.rm = TRUE)))) |> 
+    pivot_longer(
+      cols = {{variable}},
+      names_to = "Variable",
+      values_to = "mean"
+    ) |> 
+    pivot_wider(
+      names_from = gender,
+      values_from = mean
+    ) |> 
+    rename(
+      Men_Mean = Men,
+      Women_Mean = Women
+    )
+  
+  sd.results <- data |>  
+    group_by(gender) |> 
+    summarize(
+      across({{variable}}, 
+             \(x) (sd(x, na.rm = TRUE)))) |> 
+    pivot_longer(
+      cols = {{variable}},
+      names_to = "Variable",
+      values_to = "sd"
+    ) |> 
+    pivot_wider(
+      names_from = gender,
+      values_from = sd
+    ) |> 
+    rename(
+      Men_SD = Men,
+      Women_SD = Women
+    )
+  
+  up_ci <- data |> 
+    group_by(gender) |> 
+    summarize(across({{variable}}, 
+                     \(x) (mean(x, na.rm = TRUE)) + 
+                       (sd(x, na.rm = TRUE) / sqrt(n())) * 2)) |> 
+    pivot_longer(
+      cols = {{variable}},
+      names_to = "Variable",
+      values_to = "up_ci"
+    ) |> 
+    pivot_wider(
+      names_from = gender,
+      values_from = up_ci
+    ) |> 
+    rename(
+      Men_up_ci = Men,
+      Women_up_ci = Women
+    )
+  
+  lo_ci <- data |> 
+    group_by(gender) |> 
+    summarize(across({{variable}}, 
+                     \(x) (mean(x, na.rm = TRUE)) - 
+                       (sd(x, na.rm = TRUE) / sqrt(n())) * 2)) |> 
+    pivot_longer(
+      cols = {{variable}},
+      names_to = "Variable",
+      values_to = "lo_ci"
+    ) |> 
+    pivot_wider(
+      names_from = gender,
+      values_from = lo_ci
+    ) |> 
+    rename(
+      Men_lo_ci = Men,
+      Women_lo_ci = Women
+    )
+  
+  final.results <- mean.results |> 
+    left_join(sd.results)|> 
+    left_join(lo_ci) |> 
+    left_join(up_ci) |> 
+    relocate(Variable, 
+             Men_lo_ci,
+             Men_Mean,
+             Men_up_ci,
+             Men_SD, 
+             Women_lo_ci,
+             Women_Mean, 
+             Women_up_ci,
+             Women_SD) |>
+  mutate_if(is.numeric, ~round(., 2)) |> 
+  kbl() |> 
+  kable_styling()  
+  final.results
+}  
+
+full.table <- group_mean_sd_up_lo_ci(comp.osf.jealous:comp.rom.jealous)
+full.table
+
+```
+
+```{r}
+#| lable: full-descriptives 
+#| echo: false
+#| message: false
+#| warning: false
+
+count_perc <- function(df, vars) {
+  df |> 
+    select(all_of(vars)) |> 
+    gather() |> 
+    group_by(key, value) |> 
+    summarize(Count = n()) |> 
+    ungroup() |> 
+    mutate(Percentage = Count/sum(Count)) |> 
+    rename(Variable = key,
+           Group = value) |>  
+    mutate_if(is.numeric, ~round(., 3)) |> 
+    mutate(Percentage = Percentage * 100) |> 
+    kbl() |> 
+    kable_styling() 
+}
+
+var_freq <- count_perc(data, c("gender", 
+                   "relationship.status.participant", 
+                   "sexual.orientation.participant",
+                   "osf.closer.ssf"
+                   )) 
+var_freq
+```
+

@@ -46,11 +46,11 @@ rom.jeal <- data %>% select(rom.jealous, rom.threatened) %>%
   cor( use = "complete.obs")
 
 #Using my matrix's to calculate alpha 
-alpha(ssf.jeal)
-alpha(osf.jeal)
-alpha(rom.jeal)
+psych::alpha(ssf.jeal)
+psych::alpha(osf.jeal)
+psych::alpha(rom.jeal)
 
-
+?alpha
 #Angry and Upset correlation matrix's to use to calculate alpha 
 ssf.anger <- data %>% select(ssf.angry, ssf.upset) %>% 
   cor(use = "complete.obs")

@@ -41,10 +41,10 @@ long.data <- long.data %>%
                          "3" = "Romantic Partner")
   )
 
-data <- data %>% 
+long.data <- long.data %>% 
   mutate(osf.closer.ssf = factor(osf.closer.ssf) %>% 
            recode_factor("1" = "not.closer",
-                         "2" = "closer",)
+                         "2" = "closer")
   )
 
 
